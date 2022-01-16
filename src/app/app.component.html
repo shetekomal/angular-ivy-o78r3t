@@ -1,0 +1,13 @@
+<label [ngStyle]="{ 'background-color': 'grey' }">Login</label>
+<hr />
+<label apptext>Name</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" [(ngModel)]="username" placeholder="username" /><br />
+<label>Password</label>
+&nbsp;&nbsp;&nbsp;
+<input type="password" [(ngModel)]="password" placeholder="password" />
+<button (click)="check()">Submit</button>
+<hr />
+{{ msg }}
+<div *ngIf="isavailable">Welcome</div>
+<div *AlternateIf="isavail">hi</div>
